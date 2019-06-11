@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5" type="plugin" group="vmpayment" >
+    <name>EASYPAY</name>
+    <creationDate>February 2014</creationDate>
+    <author>EasyPay</author>
+    <authorUrl>http://www.web-project.by</authorUrl>
+    <copyright></copyright>
+    <license></license>
+    <version>2</version>
+    <description>Easy Pay V-Mart plugin></description>
+    <files>
+		<filename plugin="easypay">easypay.php</filename>
+    </files>
+    <languages>
+		<language tag="en-GB">en-GB.plg_vmpayment_easypay.ini</language>
+    </languages>
+	<params addpath="/administrator/components/com_virtuemart/elements">
+		<param type="vmjpluginwarning" />
+		<param	name="payment_logos" type="vmfiles" label="VMPAYMENT_LOGO"
+			description="VMPAYMENT_LOGOS_DESC"
+			directory="/images/stories/virtuemart/payment"
+			default="default" hide_default="1" hide_none="1"
+			stripext="0"   exclude="^_" />
+		<param name="debug" type="radio" default="0" label="VMPAYMENT_DEBUG" description="VMPAYMENT_DEBUG_DESC" >
+	    	<option value="1">COM_VIRTUEMART_YES</option>
+	    	<option value="0">COM_VIRTUEMART_NO</option>
+		</param>
+		<param name="wsb_storied" type="text" size="15" label="VMPAYMENT_MERCHANT" description="Номер магазина" default="ok1866" />
+		<param name="web_key"  type="text" size="50" label="VMPAYMENT_WEBKEY"   description="WEBKEY"   default="XcnBRhQcrG" />
+		<param name="comment"  type="text" size="40" label="VMPAYMENT_COMMENT"  description="VMPAYMENT_COMMENT_DESC"  default="Комментарий" />
+		<param name="expiried" type="text" size="1"  label="VMPAYMENT_EXPIRIED" description="VMPAYMENT_EXPIRIED_DESC" default="4" />
+		<!--<param name="server"   type="text" size="40" label="VMPAYMENT_SERVER"   description="VMPAYMENT_SERVER_DESC"   default="https://ssl.easypay.by/weborder/" />-->
+		<param name="wsb_payurl"   type="text" size="40" label="VMPAYMENT_SERVER"   description="VMPAYMENT_SERVER_DESC"   default="https://ssl.easypay.by/sandbox/" />
+	</params>
+</install>

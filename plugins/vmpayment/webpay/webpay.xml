@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<install version="1.5" type="plugin" group="vmpayment" >
+    <name>Web Pay - for Belarus e-shop</name>
+    <creationDate>June 12 2013</creationDate>
+    <author>Aliance Web Project</author>
+    <authorUrl>http://www.web-project.by</authorUrl>
+    <copyright>Copyright (C) 2013 Web Project. All rights reserved.</copyright>
+    <license>Commercial</license>
+    <version>1.0.1</version>
+    <description>Web Pay ()Standard) payment plugin</description>
+    <files>
+	<filename plugin="webpay">webpay.php</filename>
+    </files>
+    <languages>
+	<language tag="en-GB">en-GB.plg_vmpayment_webpay.ini</language>
+	<language tag="ru-RU">ru-RU.plg_vmpayment_webpay.ini</language>
+	</languages>
+
+    <params addpath="/administrator/components/com_virtuemart/elements">
+	<param type="vmjpluginwarning" />
+	<param	name="payment_logos" type="vmfiles" label="VMPAYMENT_STANDARD_LOGOS"
+		description="VMPAYMENT_STANDARD_LOGOS_DESC"
+		directory="/images/stories/virtuemart/payment"
+		default="default" hide_default="1" hide_none="1"
+		stripext="0"   exclude="^_" />
+	<param name="countries" type="vmcountries"  scope="com_virtuemart" default="" label="VMPAYMENT_STANDARD_COUNTRIES" description="VMPAYMENT_STANDARD_COUNTRIES_DESC"/>
+    <param name="payment_currency" type="vmacceptedcurrency" default="" label="VMPAYMENT_STANDARD_CURRENCY" description="VMPAYMENT_STANDARD_CURRENCY_DESC" />
+	<param name="status_pending" type="vmorderstate" scope="com_virtuemart" default="U" label="VMPAYMENT_STANDARD_STATUS_PENDING" description="VMPAYMENT_STANDARD_STATUS_PENDING_EXPLAIN" />
+   <!--
+	<param name="min_amount" type="text"  label="VMPAYMENT_STANDARD_MIN_AMOUNT" description="VMPAYMENT_STANDARD_MIN_AMOUNT_EXPLAIN" />
+	<param name="max_amount" type="text"  label="VMPAYMENT_STANDARD_MAX_AMOUNT" description="VMPAYMENT_STANDARD_MAX_AMOUNT_EXPLAIN" />
+	<param name="cost_per_transaction" type="text"  label="VMPAYMENT_STANDARD_COST_PER_TRANSACTION" description="VMPAYMENT_STANDARD_COST_PER_TRANSACTION_EXPLAIN" />
+	<param name="cost_percent_total" type="text"  label="VMPAYMENT_STANDARD_COST_PERCENT_TOTAL" description="VMPAYMENT_STANDARD_COST_PERCENT_TOTAL_EXPLAIN" />
+	<param name="tax_id" type="vmtaxes" scope="com_virtuemart"  label="VMPAYMENT_STANDARD_TAX" description="VMPAYMENT_STANDARD_TAX_DESC" />
+	<param name="payment_info" type="textarea" cols="40" rows="30" label="VMPAYMENT_STANDARD_PAYMENTINFO" description="VMPAYMENT_STANDARD_PAYMENTINFO_EXPLAIN" />-->
+
+	<param name="wsb_storied" type="text" size="32" default="" label="Номер магазина" description="" />
+    <param name="wsb_store" type = "text" size ="32" default="digimart" label="Название магазина" description="" />
+    <param name="wsbPsw" type="text" default="" label="Psw" description="Secret Code" />
+    <param name="wsb_payurl" type="text" size="254" default="" label="BankURL" description="" />
+
+    </params>
+
+
+
+</install>
