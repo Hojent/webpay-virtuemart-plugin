@@ -1,15 +1,20 @@
-# Mass-media Accreditation
-(laravel 5.8.10 + MySQL tables migrations)
+# Virtue Mart 3 . Plugins for EasyPay and WebPay payment systems
+Reqestion:
+- Joomla 3
+- Virtue Mart 3
 
-Event on-line registration. May be applied for mass-media registration, meeting participants registration and so on. 
+Virtue Mart payment plugins for Belarussian payment systems "Web Pay" and "Easy Pay".  
 
-Settings form:
-- Event title
-- Organization's name
-- Short description
-- Personal datas participants: Family - Name - Birthday (data) - Personal number (int) - Address - Photo - e-mail
+Installation:
+- copy folders "webpay" and "easypay" form /plugins/vmpayment/ in your one.
+- copy or move languages files form folder "webpay" to your languages folders
+  (joomla-root/language/en-GB/ and joomla-root/language/ru-RU/).
 
-Each form field can be ON/OFF.
+Plugin settings:
+- Shop title
+- Shop ID
+- Payment Url
+- SecretKey (Secret word to signature setting)
 
-It's not possible to change field Title and to add additional fields.
-
+Сurrency exchange rate is set by Virtue Mart.
+The signature is unicue for each transaction and transmitted in encrypted form.
