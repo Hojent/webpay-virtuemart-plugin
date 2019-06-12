@@ -17,4 +17,5 @@ Plugin settings:
 - SecretKey (Secret word to signature setting)
 
 Сurrency exchange rate is set by Virtue Mart.
+
 The signature is unicue for each transaction and transmitted in encrypted form.
