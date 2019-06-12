@@ -1,4 +1,4 @@
-# Virtue Mart 3 . Plugins for EasyPay and WebPay payment systems
+﻿# Virtue Mart 3 . Plugins for EasyPay and WebPay payment systems
 Reqestion:
 - Joomla 3
 - Virtue Mart 3
@@ -18,4 +18,6 @@ Plugin settings:
 
 Сurrency exchange rate is set by Virtue Mart.
 
-The signature is unicue for each transaction and transmitted in encrypted form.
+The signature is unique for each transaction and transmitted in encrypted form.
+
+Each transaction is logged in database table. Run "webpay.sql"  to create the table.
